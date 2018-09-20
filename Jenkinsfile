@@ -21,7 +21,7 @@ pipeline {
 
     stage('Mobile Test') {
       steps {
-          sh "hostname; npm install --strict-ssl false --loglevel warn"
+          sh "hostname; /usr/local/bin/npm install --strict-ssl false --loglevel warn"
       }
     }
   }
