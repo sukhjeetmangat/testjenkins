@@ -1,5 +1,8 @@
 pipeline {
   agent { label "mac" }
+  tools {
+        nodejs 'node 7'
+    }
   stages {
     stage('Mobile Test') {
       steps {
