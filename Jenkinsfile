@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Mobile Test') {
       steps {
-          sh "hostname; id; /usr/local/bin/npm install --strict-ssl false --loglevel warn"
+          sh "hostname; npm --version; /usr/local/bin/npm install --strict-ssl false --loglevel warn"
       }
     }
   }
